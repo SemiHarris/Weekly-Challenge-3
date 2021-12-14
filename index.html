@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./javascript/password.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <script src="./javascript/password.js"></script>
-    
-    <p>
-        <script type="text/javascript">
-            document.write(password)
-        </script>
-    </p>
+<section>
+    <form>
+        <lable for="Password">Password</lable><br>
+        <input type="text" id='password' name="Password">
+    </form>
 
+    <button id="generate">GENERATE</button>
+    <script>
+    document.getElementById("generate").addEventListener('click', function(){
+        passwordGenerator() 
+    })
+    </script>
+</section>
 </body>
 </html>
