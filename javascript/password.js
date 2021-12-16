@@ -25,7 +25,7 @@ var Random = function(passwordCount, typeSelect) {
     return password;
 }
 
-
+/*Select the parameters for the password*/
 var passwordGenerator = function() {
     var passwordCount= window.prompt("Enter in your password length. (8-128 character)")
         
@@ -62,6 +62,7 @@ var passwordGenerator = function() {
             }
     }
 
+/*Passes the parameters into the Generate password function and display results on screen*/
     var passWord = Random(passwordCount, typeSelect)
     document.getElementsByName("Password")[0].value = passWord;
 }
